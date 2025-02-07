@@ -1,0 +1,111 @@
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    background-color: #f8f9fa;
+    background-image: url('https://wallpapers.com/images/hd/pink-and-teal-qn06obqysd83xp2p.jpg'); 
+    background-size: cover;
+    background-position: center;
+    font-family: 'Ubuntu', sans-serif; /* Applying Ubuntu for body text */
+}
+
+h1 {
+    margin-bottom: 30px;
+    text-align: center;
+    font-size: 44px;
+    font-family: 'Bodoni Moda SC', serif; /* Applying Bodoni Moda SC for title */
+}
+
+.container {
+    display: flex;
+    justify-content: space-between; 
+    width: 100%;
+    max-width: 1200px;
+    padding: 20px;
+    background-color: white;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.someone {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.arithmetic-operations,
+.comparison-operations,
+.logical-operations {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 0 20px;
+    padding: 20px;
+    border-radius: 8px;
+    width: 30%;
+    box-sizing: border-box;
+}
+
+.arithmetic-operations hr,
+.comparison-operations hr,
+.logical-operations hr {
+    width: 100%;
+    border: 1px solid #ddd;
+    margin: 20px 0;
+}
+
+.arithmetic-operations {
+    background-color: #c1eac1;
+}
+
+.comparison-operations {
+    background-color: #f8d1d1;
+}
+
+.logical-operations {
+    background-color: #b4d8f7;
+}
+
+.arithmetic-operations h4, .comparison-operations h4, .logical-operations h4 {
+    margin-bottom: 10px;
+}
+
+.arithmetic-operations button {
+    background-color: #a2d6a2;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.comparison-operations button {
+    background-color: #f8b5b5;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.logical-operations button {
+    background-color: #b4cde7;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+button:hover {
+    opacity: 0.9;
+}
+
+footer {
+    text-align: center;
+    margin-top: 20px;
+    font-size: 14px;
+    color: #6c757d;
+}
+
+hr {
+    line-height: 5px;
+}

@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Bodoni+Moda+SC:ital,opsz,wght@0,6..96,400..900;1,6..96,400..900&family=Kumar+One&family=Limelight&family=Prata&family=Sour+Gummy:ital,wght@0,100..900;1,100..900&family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap" rel="stylesheet">
+
+        <title>Project 1 || Multiple Operators</title>
+
+        <!-- Link to external CSS file -->
+        <link rel="stylesheet" href="style.css">
+    </head>
+    
+    <body>
+        <div class="body">
+
+            <h1>Javascript Operators</h1>
+
+            <div class="container">
+                <br>
+
+                <!-- Given Instructions -->
+                <div class="someone">
+                    <h3>GIVEN: If A = 24.18 and B = 7.18,</h3>
+                </div>
+
+                <!-- Arithmetic Operations -->
+                <div class="arithmetic-operations">
+                    <h4>A ** B = </h4>
+                    <h4 id="A"> ?</h4>
+                    
+                    <!-- Division line -->
+                    <hr>
+
+                    <h4>A % B = </h4>
+                    <h4 id="B"> ?</h4>
+                    <button type="button" onclick=" 
+                        var $a = 24.18;  
+                        var $b = 7.18;
+                        var r1 = ($a ** $b).toFixed(2);
+                        var r2 = ($a % $b).toFixed(2);
+                        document.getElementById('A').textContent = $a + ' ** ' + $b + ' = ' + r1;
+                        document.getElementById('B').textContent = $a + '%' + $b + ' = ' + r2;
+                    ">Solve</button>
+                </div>
+
+
+                <!-- Division 2 - Comparison Operations -->
+                <div class="comparison-operations">
+                    <h4>Is 30.27 greater than 6.18?</h4>
+                    <h4 id="C"> ?</h4>
+
+                    <!-- Division line -->
+                    <hr>
+
+
+                    <h4>Is 30.27 equal to 6.18?</h4>
+                    <h4 id="D"> ?</h4>
+                    <button type="button" onclick=" 
+                        var $c = 30.27;  
+                        var $d = 6.18;
+                        var r3 = ($c > $d).toString();
+                        var r4 = ($c == $d).toString(); 
+                        document.getElementById('C').textContent = r3;
+                        document.getElementById('D').textContent = r4;
+                    ">Solve</button>
+                </div>
+
+                <!-- Division 3 - Logical Operations -->
+                <div class="logical-operations">
+                    <h4 class="logic">(A <= B) && (A >= B):</h4>
+                    <h4 id="E"> ?</h4>
+
+                    <!-- Division line -->
+                    <hr>
+
+
+                    <h4 class="logic">(A != B) || (A == B):</h4>
+                    <h4 id="F"> ?</h4>
+                    <button type="button" onclick=" 
+                        var $a = 24.18;  
+                        var $b = 7.18;
+                        var r5 = (($a <= $b) && ($a >= $b)).toString();  
+                        var r6 = (($a != $b) || ($a == $b)).toString();  
+                        document.getElementById('E').textContent = r5;
+                        document.getElementById('F').textContent = r6;
+                    ">Solve</button>
+                </div>
+
+                <br>
+                <div>
+                    <button type="button" onclick="window.location.reload()"> ↻ Refresh  </button>
+                </div>
+
+                <footer>
+                    Shalanie Lanette G. Garabiles || 9 - Ruby
+                </footer>
+            </div>
+        </div>
+    </body>
+</html>
